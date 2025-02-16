@@ -2,8 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import WelcomeMessage from './WelcomeMessage'
-
+import Header from './Header';
+import WelcomeMessage from './WelcomeMessage';
+import MainContent from './MainContent'
+import Footer from './Footer'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -16,7 +18,13 @@ function App() {
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+        
         <WelcomeMessage />
+        <Header />
+        <MainContent />
+        <Footer />
+        
+        
       </div>
       <h1>vite + React</h1>
       <div className="card">
@@ -34,4 +42,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
