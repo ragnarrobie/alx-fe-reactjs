@@ -6,6 +6,7 @@ import Header from './Header';
 import WelcomeMessage from './WelcomeMessage';
 import MainContent from './MainContent'
 import Footer from './Footer'
+import UserProfile from './UserProfile';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -31,6 +32,10 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <div>
+          
+
+        </div>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
@@ -42,4 +47,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
