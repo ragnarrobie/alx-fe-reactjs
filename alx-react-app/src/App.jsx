@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import UserProfile from './UserProfile';
 
 
 const App = () => {
   const[details,setDetails]= useState({counter:0, name:""});
+  useEffect(()=>{
+    document.title = `${details.counter} new messages`;
+  })
   function increaseCounter(){
     setDetails((prev)=>({
       ...prev,
       counter:prev.counter+1,
     }));
+
   }
   console.log(details);
   return (
