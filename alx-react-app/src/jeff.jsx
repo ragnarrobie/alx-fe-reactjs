@@ -1,7 +1,6 @@
 import react from 'react';
 const app = ()=>{
-    const[counter,setcounter]=useState(0);
-    const[name ,setName]=userName("");
+   const[details,setDetails] = useState({counter:0,name:""})
     function increase(){
         setcounter(counter+1);
     }

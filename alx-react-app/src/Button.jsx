@@ -1,14 +1,13 @@
-import react,{useState} from 'react';
-function counter(){
-const[count,setCount] = useState(0);
-
-return(
-    <div>
-        <p>you clicked {count}</p>
-        <button onClick={()=>setCount(count +1) } >
-            click me
-        </button>
-    </div>
-)
+import react from'react';
+const app =()=>{
+    const[details,setDetails]=useState({counter:0,name:""});
+    function increse(){
+        setDetails({counter:details.counter+1});
+    }
+    return(
+        <div>
+            <h1>{details.name}said count it up{details.counter}</h1>
+            <button onClick={increse}>increase</button>
+        </div>
+    )
 }
-export default Button;
